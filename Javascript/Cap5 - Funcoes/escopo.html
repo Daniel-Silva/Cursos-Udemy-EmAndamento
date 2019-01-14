@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Escopo</title>
+    </head>
+    <body>
+        <h1>Escopo</h1>
+        <script>
+            
+            //Escopo de funções
+            var x = "Eu sou global";
+            
+            function getX(){
+                var x = "Eu sou local";
+                console.log("Valor de x: ", x);
+            }
+            
+            getX();
+            console.log("Valor de x: ", x);
+            
+        </script>
+    </body>
+</html>
