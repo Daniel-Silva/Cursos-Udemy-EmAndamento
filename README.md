@@ -8,8 +8,10 @@ Repositório com exercícios dos cursos em adamento da Udemy.
 * CSS
 * JavaScript OO
 * jQuery
+* Bootstrap
 * JAVA
 * C#
+
 
 ## CURSOS
 
