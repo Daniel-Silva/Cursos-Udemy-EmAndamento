@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var starfighters_1 = require("./starfighters");
 var base_ships_1 = require("./base-ships");
+var _ = require("lodash");
+console.log(_.pad("typescript Examples", 40, "="));
 //Nova instância
 var ship = new base_ships_1.Spacecraft('hyperdrive');
 ship.jumpIntoHyperspace();
