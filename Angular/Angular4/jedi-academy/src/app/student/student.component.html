@@ -1,6 +1,11 @@
-<div>
-  Student: {{name}}
-  <div [hidden]="!isJedi"> 
-    Jedi Template: Coruscant
+<div *ngIf="student" >
+  Student: <a href="#" (click)="clicked()">{{student?.name}}</a>
+  <div *ngIf="student?.isJedi"> 
+    Jedi Template: {{studant?.temple}}<button (click)="description.focus()">Focus!</button><br />
+    <textarea #description></textarea>
   </div>
 </div>
+<p *ngIf="!student" >
+  Sen dados para exibir!
+</p>
+
