@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Funções autoexecutáveis e aguments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        //Funções autoexecutáveis ou IFEE        
+        (function(n1,n2){
+            'use strict';//indica que o código deve ser executado em "modo estrito" 
+            console.log(n1 + n2);
+        })(10,20);
+
+        //Propriedade arguments
+        function somar (arr){
+            console.log(arguments);//Arguments represeta todos os parâmetros passados
+            var result = 0;
+            var x = 0;
+            while(arguments[x]){
+                result += arguments[x];
+                x++;
+            }
+            console.log("result: ", result);
+        }
+
+        somar(20,20,40,80);
+    </script>
+</body>
+</html>
