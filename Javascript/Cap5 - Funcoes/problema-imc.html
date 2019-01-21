@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Problema - Calcular IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        //Calculando IMC
+        (function(){
+            'user strict';
+            function calcularImc(peso, altura){
+                
+                return peso / (altura * altura);
+            }
+            
+            function validImc(imc){
+                
+                if(imc <= 16.9) {
+                    return 'Muito abaixo do peso';
+                }else if(imc <= 18.4){
+                    return 'Abaixo do peso';
+                }else if(imc <= 24.9){
+                    return 'Normal';
+                }else if(imc <= 29.9){
+                    return 'Acima do peso';
+                }else if(imc <= 34.9){
+                    return 'Obesidade I';
+                }else if                
+            }
+        })()
+        
+    </script>
+</body>
+</html>

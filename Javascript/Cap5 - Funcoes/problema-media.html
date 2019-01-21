@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Problema - Calcular média</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        //Calculando média
+        (function(){
+            function calcMedia(){
+                var total = 0,//Obs.: Zero é considerado false
+                    qtd = arguments.length,
+                    x = 0;
+                while(typeof arguments[x] === 'number'){
+                    total += arguments[x];
+                    x++
+                }
+                return total / qtd;
+            }
+            
+            var media1 = calcMedia(2,3);
+            var media2 = calcMedia(4,0,10,10);
+            
+            console.log('media 1: ', media1.toFixed(2));
+            console.log('media 2: ', media2.toFixed(2))
+        })()
+        
+    </script>
+</body>
+</html>
