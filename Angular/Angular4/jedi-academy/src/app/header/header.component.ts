@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  titleHeader: string = "Jedi Academy";
   constructor() { }
 
   ngOnInit() {
