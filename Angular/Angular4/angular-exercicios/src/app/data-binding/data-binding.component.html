@@ -1,0 +1,71 @@
+<section class="container">
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtiCurso() }}</p>
+  </article>
+  <article>
+    <h3>Property Binding</h3>
+    <div class="row">
+      <div class="col-xs-6 col-md-3 col-lg-3">
+        <a href="#" class="thumbnail">
+          <img [src]="urlImagem" [alt]="imgAlt" />
+        </a>
+      </div>
+    </div>
+    
+  </article>
+  <article>
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #class (change)="0">
+        <option value="alert-success">Success</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+        <option value="alert-danger">Danger</option>
+      </select>
+    </div><br>
+    <div class="alert {{ class.value }}" role='alert'>TESTE</div>
+    <div class="alert" role="alert" [class.alert-success]="class.value == 'alert-success'" >Success</div>
+    <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'" >Info</div>
+    <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'" >Warning</div>
+    <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'" >Danger</div>
+    <div class="alert alert-danger" role="alert" [style.display]="class.value == 'alert-danger' ? 'block' : 'none'">Esse texto aparece em caso de erro</div>
+  </article>    
+</section>
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>

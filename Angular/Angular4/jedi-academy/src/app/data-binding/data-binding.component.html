@@ -21,6 +21,7 @@
         <option value="alert-danger">Danger</option>
       </select>
     </div><br><br>
+    <div class="alert {{ class.value }}" role="alert"></div>
     <div class="alert" role="alert" [class.alert-sucess]="class.value == 'alert-sucess'">Sucess</div>
     <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">Info</div>
     <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">Warning</div>
