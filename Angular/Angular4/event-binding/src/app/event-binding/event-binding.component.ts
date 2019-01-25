@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
-  nome: string = "Daniel Silva"
+  nome: string = 'Daniel Silva';
   constructor() { }
 
   ngOnInit() {
   }
 
   botaoClicado(){
-    alert("Fui Clicado!");
+    alert('Fui Clicado!');
   }
 
   onKeyUp(evento: KeyboardEvent){
