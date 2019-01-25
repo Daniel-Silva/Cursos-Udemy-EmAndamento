@@ -1,0 +1,15 @@
+<section class="container">
+  <select #class (change)="0">
+    <option value="alert-success">Success</option>
+    <option value="alert-info">Info</option>
+    <option value="alert-warning">Warning</option>
+    <option value="alert-danger">Danger</option>
+  </select>
+  <div class="alert" role="alert" [class.alert-success]="class.value == 'alert-success'">Success</div>
+  <div class="alert" role="alert" [class.alert-info]="class.value == 'alert-info'">Info</div>
+  <div class="alert" role="alert" [class.alert-warning]="class.value == 'alert-warning'">Warning</div>
+  <div class="alert" role="alert" [class.alert-danger]="class.value == 'alert-danger'">Danger</div>
+  <div class="alert {{ class.value }}" role="alert">Esta classe interage diretamente com o select</div>
+  <div class="alert alert-danger" role="alert" [style.display]="class.value == 'alert-danger' ? 'block' : 'none'">Este elemento aparece em caso de erro!</div>
+</section>
+
