@@ -1,0 +1,15 @@
+
+<h1>Event Binding</h1>
+<div class="content">
+  <button class="btn btn-primary" (click)="click()">Me clique!</button>
+  <p>valor atualizado: {{ nome }}</p>
+  <p>valor salvo: {{ valorSalvo }}</p>
+  <input type="text" class="form-control form-control-sm" 
+    (keyup)="onKey($event)" 
+    (keyup.enter)="salvarValor($event.target.value)" 
+    (blur)="salvarValor(campoInput.value)" #campoInput>
+  <span (mouseover)="onMouseOver()"
+        (mouseout)="onMouseOver()"
+        [class.highlight]="isMouseOver">Passe o mouse aqui</span>
+</div>
+
