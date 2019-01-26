@@ -9,4 +9,10 @@
       (mudouValor)="onMudouValor($event)"
     ></app-output-property>
   </article>
+  <article>
+    <h1>Curso Angular #15: Ciclo de vida do Componente</h1>
+    <app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo" ></app-ciclo>
+    <button class="btn btn-danger" (click)="mudarValor()">Mudar Valor</button>
+    <button class="btn btn-danger" (click)="destruirCiclo()">Deletar</button>
+  </article>
 </section>
