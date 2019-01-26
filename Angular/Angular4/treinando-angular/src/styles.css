@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: aquamarine;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid aquamarine;
+    border-radius: 10px
+}
+
+article{
+    margin-bottom: 30px;
+}

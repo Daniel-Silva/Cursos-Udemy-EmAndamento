@@ -1,5 +1,12 @@
 <section class="input-output-propesties">
   <article>
+    <h1>Curso Angular #13: Reusando Componentes com Input properties</h1>
     <app-input-property [nome]="nomeDoCurso"></app-input-property>
+  </article>
+  <article>
+    <h1>Curso Angular #14: Emitindo Eventos com Output properties</h1>
+    <app-output-property [valor]="valorInicial" 
+      (mudouValor)="onMudouValor($event)"
+    ></app-output-property>
   </article>
 </section>
