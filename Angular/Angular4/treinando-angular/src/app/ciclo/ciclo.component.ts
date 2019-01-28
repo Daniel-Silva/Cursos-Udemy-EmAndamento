@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy, Input } from '@angular/core';
 
 
 @Component({
@@ -11,7 +11,7 @@ AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy {
 
   @Input() valorInicial: number = 10;
 
-  constructor() { 
+  constructor() {
     this.log('constructor');
   }
 
@@ -34,6 +34,14 @@ AfterContentInit, AfterViewChecked, AfterViewInit, OnDestroy {
 
   ngAfterViewChecked() {
     this.log('ngAfterViewChecked');
+  }
+
+  ngAfterContentInit(){
+    this.log('AfterContentInit');
+  }
+
+  ngAfterContentChecked(){
+    this.log('AfterContentChecked');
   }
 
   ngOnDestroy() {
