@@ -1,7 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var pessoaDAO_1 = require("./pessoaDAO");
+var pessoa_1 = require("./pessoa");
 var concessionariaDAO_1 = require("./concessionariaDAO");
 var concessionaria_1 = require("./concessionaria");
 var dao = new concessionariaDAO_1.ConcessionariaDAO();
 var concessionaria = new concessionaria_1.Concessionaria('', []);
 dao.inserir(concessionaria);
+var daoPessoa = new pessoaDAO_1.PessoaDAO();
+var pessoa = new pessoa_1.Pessoa('', '');
+daoPessoa.atualizar(pessoa);
